@@ -10,15 +10,18 @@ Username   u298813-sub7
 Password   wnEtWtT9UDyJiCGw
 
 _r '
-<a href="https://u298813-sub7.your-storagebox.de/mirage335KernelBuild/linux-lts-amd64-debian.tar.gz">https://u298813-sub7.your-storagebox.de/mirage335KernelBuild/linux-lts-amd64-debian.tar.gz</a> <br \>
-'
-_r '
-<a href="https://u298813-sub7.your-storagebox.de/mirage335KernelBuild/linux-mainline-amd64-debian.tar.gz">https://u298813-sub7.your-storagebox.de/mirage335KernelBuild/linux-mainline-amd64-debian.tar.gz</a> <br \>
+<a href="https://u298813-sub7.your-storagebox.de/mirage335KernelBuild/linux-lts-amd64-debian.tar.gz">https://u298813-sub7.your-storagebox.de/mirage335KernelBuild/linux-lts-amd64-debian.tar.gz</a>
 '
  
 _r '
-<a href="https://u298813-sub7.your-storagebox.de/ubcp/package_ubiquitous_bash-msw.7z">https://u298813-sub7.your-storagebox.de/ubcp/package_ubiquitous_bash-msw.7z</a> <br \>
+<a href="https://u298813-sub7.your-storagebox.de/mirage335KernelBuild/linux-mainline-amd64-debian.tar.gz">https://u298813-sub7.your-storagebox.de/mirage335KernelBuild/linux-mainline-amd64-debian.tar.gz</a>
 '
+ 
+ 
+_r '
+<a href="https://u298813-sub7.your-storagebox.de/ubcp/package_ubiquitous_bash-msw.7z">https://u298813-sub7.your-storagebox.de/ubcp/package_ubiquitous_bash-msw.7z</a>
+'
+ 
 
 
 Installing some of these products correctly may require &#39;Run as Administrator&#39;, &#39;sudo&#39;, or similar.
@@ -29,12 +32,14 @@ Username   u298813-sub7
 Password   wnEtWtT9UDyJiCGw
 
 _r '
-<a href="https://u298813-sub7.your-storagebox.de/">https://u298813-sub7.your-storagebox.de/</a> <br \>
+<a href="https://u298813-sub7.your-storagebox.de/">https://u298813-sub7.your-storagebox.de/</a>
 '
  
+ 
 _r '
-<a href="https://u298813-sub7.your-storagebox.de/">https://u298813-sub7.your-storagebox.de/mirage335TechArchive_discImages/</a> <br \>
+<a href="https://u298813-sub7.your-storagebox.de/">https://u298813-sub7.your-storagebox.de/mirage335TechArchive_discImages/</a>
 '
+ 
  
 
 https://u298813-sub7.your-storagebox.de/mirage335KernelBuild/linux-lts-amd64-debian.tar.gz

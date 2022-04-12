@@ -70,10 +70,13 @@ _t 'Username   u298813-sub7
 Password   wnEtWtT9UDyJiCGw
 
 '
-_r '<a href="https://u298813-sub7.your-storagebox.de/mirage335KernelBuild/linux-lts-amd64-debian.tar.gz">https://u298813-sub7.your-storagebox.de/mirage335KernelBuild/linux-lts-amd64-debian.tar.gz</a> <br \>'
-_r '<a href="https://u298813-sub7.your-storagebox.de/mirage335KernelBuild/linux-mainline-amd64-debian.tar.gz">https://u298813-sub7.your-storagebox.de/mirage335KernelBuild/linux-mainline-amd64-debian.tar.gz</a> <br \>'
+_r '<a href="https://u298813-sub7.your-storagebox.de/mirage335KernelBuild/linux-lts-amd64-debian.tar.gz">https://u298813-sub7.your-storagebox.de/mirage335KernelBuild/linux-lts-amd64-debian.tar.gz</a>'
 _t ' '
-_r '<a href="https://u298813-sub7.your-storagebox.de/ubcp/package_ubiquitous_bash-msw.7z">https://u298813-sub7.your-storagebox.de/ubcp/package_ubiquitous_bash-msw.7z</a> <br \>'
+_r '<a href="https://u298813-sub7.your-storagebox.de/mirage335KernelBuild/linux-mainline-amd64-debian.tar.gz">https://u298813-sub7.your-storagebox.de/mirage335KernelBuild/linux-mainline-amd64-debian.tar.gz</a>'
+_t ' '
+_t ' '
+_r '<a href="https://u298813-sub7.your-storagebox.de/ubcp/package_ubiquitous_bash-msw.7z">https://u298813-sub7.your-storagebox.de/ubcp/package_ubiquitous_bash-msw.7z</a>'
+_t ' '
 
 
 _t '
@@ -87,9 +90,11 @@ _t 'Username   u298813-sub7
 Password   wnEtWtT9UDyJiCGw
 
 '
-_r '<a href="https://u298813-sub7.your-storagebox.de/">https://u298813-sub7.your-storagebox.de/</a> <br \>'
+_r '<a href="https://u298813-sub7.your-storagebox.de/">https://u298813-sub7.your-storagebox.de/</a>'
 _t ' '
-_r '<a href="https://u298813-sub7.your-storagebox.de/">https://u298813-sub7.your-storagebox.de/mirage335TechArchive_discImages/</a> <br \>'
+_t ' '
+_r '<a href="https://u298813-sub7.your-storagebox.de/">https://u298813-sub7.your-storagebox.de/mirage335TechArchive_discImages/</a>'
+_t ' '
 _t ' '
 _t 'https://u298813-sub7.your-storagebox.de/mirage335KernelBuild/linux-lts-amd64-debian.tar.gz'
 _t 'https://u298813-sub7.your-storagebox.de/mirage335KernelBuild/linux-mainline-amd64-debian.tar.gz'
@@ -336,7 +341,13 @@ _default() {
 	currentScriptBasename=$(basename "$scriptAbsoluteLocation" | sed 's/\.[^.]*$//')
 	#"$scriptAbsoluteFolder"/"$currentScriptBasename".html _test
 	
-	cp "$scriptAbsoluteFolder"/"$currentScriptBasename"_presentation.html index.html
+	echo '<!DOCTYPE html>
+<link rel="icon" type="image/png" href="favicon.ico"/>
+exit
+<script type=text/javascript> document.body.innerHTML = ''; </script>
+<!-- DANGER: WARNING: Do NOT edit, do NOT use as shell script. Although self-modifying features may be present, this entire file is NOT properly self-modifying. -->' > "$scriptAbsoluteFolder"/index.html
+	
+	cat "$scriptAbsoluteFolder"/"$currentScriptBasename"_presentation.html >> "$scriptAbsoluteFolder"/index.html
 	
 	[[ "$current_deleteScriptLocal" == "true" ]] && rmdir "$scriptLocal" > /dev/null 2>&1
 }
