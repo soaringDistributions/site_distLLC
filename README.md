@@ -486,7 +486,7 @@ _default() {
 	currentScriptBasename=$(basename "$scriptAbsoluteLocation" | sed 's/\.[^.]*$//')
 	#"$scriptAbsoluteFolder"/"$currentScriptBasename".html _test
 	
-	echo 'PCFET0NUWVBFIGh0bWw+CjxsaW5rIHJlbD0iaWNvbiIgdHlwZT0iaW1hZ2UvcG5nIiBocmVmPSJmYXZpY29uLmljbyIvPgpleGl0CjxzY3JpcHQgdHlwZT10ZXh0L2phdmFzY3JpcHQ+IGRvY3VtZW50LmJvZHkuaW5uZXJIVE1MID0gOyA8L3NjcmlwdD4KPCEtLSBEQU5HRVI6IFdBUk5JTkc6IERvIE5PVCBlZGl0LCBkbyBOT1QgdXNlIGFzIHNoZWxsIHNjcmlwdC4gQWx0aG91Z2ggc2VsZi1tb2RpZnlpbmcgZmVhdHVyZXMgbWF5IGJlIHByZXNlbnQsIHRoaXMgZW50aXJlIGZpbGUgaXMgTk9UIHByb3Blcmx5IHNlbGYtbW9kaWZ5aW5nLiAtLT4K' > "$scriptAbsoluteFolder"/index.html
+	echo 'PCFET0NUWVBFIGh0bWw+CjxsaW5rIHJlbD0iaWNvbiIgdHlwZT0iaW1hZ2UvcG5nIiBocmVmPSJmYXZpY29uLmljbyIvPgpleGl0CjxzY3JpcHQgdHlwZT10ZXh0L2phdmFzY3JpcHQ+IGRvY3VtZW50LmJvZHkuaW5uZXJIVE1MID0gOyA8L3NjcmlwdD4KPCEtLSBEQU5HRVI6IFdBUk5JTkc6IERvIE5PVCBlZGl0LCBkbyBOT1QgdXNlIGFzIHNoZWxsIHNjcmlwdC4gQWx0aG91Z2ggc2VsZi1tb2RpZnlpbmcgZmVhdHVyZXMgbWF5IGJlIHByZXNlbnQsIHRoaXMgZW50aXJlIGZpbGUgaXMgTk9UIHByb3Blcmx5IHNlbGYtbW9kaWZ5aW5nLiAtLT4K' | base64 -d > "$scriptAbsoluteFolder"/index.html
 	
 	cat "$scriptAbsoluteFolder"/"$currentScriptBasename"_presentation.html >> "$scriptAbsoluteFolder"/index.html
 	
