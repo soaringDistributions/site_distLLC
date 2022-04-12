@@ -450,6 +450,8 @@ _default() {
 	currentScriptBasename=$(basename "$scriptAbsoluteLocation" | sed 's/\.[^.]*$//')
 	#"$scriptAbsoluteFolder"/"$currentScriptBasename".html _test
 	
+	cp "$scriptAbsoluteFolder"/"$currentScriptBasename"_presentation.html index.html
+	
 	[[ "$current_deleteScriptLocal" == "true" ]] && rmdir "$scriptLocal" > /dev/null 2>&1
 }
 
