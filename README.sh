@@ -81,8 +81,7 @@ _t ' '
 
 _t '
 
-Installing some of these products correctly may require &#39;Run as Administrator&#39;, &#39;sudo&#39;, or similar.
-'
+Installing some of these products correctly may require &#39;Run as Administrator&#39;, &#39;sudo&#39;, or similar.'
 
 
 _heading2 'Products - Developer'
@@ -105,7 +104,16 @@ _t 'https://u298813-sub7.your-storagebox.de/ubcp/package_ubcp-core.7z'
 
 
 
+_heading2 'Other'
+_t 'Username   u298813-sub10
+Password   OJgZTe0yNilixhRy
 
+'
+_r '<a href="https://u298813-sub10.your-storagebox.de/">https://u298813-sub10.your-storagebox.de/</a>'
+
+_t '
+
+Public files not officially at a &#39;release&#39; directory may be automatically generated, mostly for diagnostics. Usually, not expected useful for developer or end user. Completeness and notability may not be expected.'
 
 
 
@@ -169,9 +177,8 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU Affero General Public License for more details.
 
 You should have received a copy of the GNU Affero General Public License
-along with site_distLLC  If not, see &lt;http://www.gnu.org/licenses/&gt;.
-'
-_t '
+along with site_distLLC  If not, see &lt;http://www.gnu.org/licenses/&gt;.'
+_ _t '
 
 
 '
@@ -341,6 +348,7 @@ _default() {
 	currentScriptBasename=$(basename "$scriptAbsoluteLocation" | sed 's/\.[^.]*$//')
 	#"$scriptAbsoluteFolder"/"$currentScriptBasename".html _test
 	
+	# Icon .
 	echo 'PCFET0NUWVBFIGh0bWw+CjxsaW5rIHJlbD0iaWNvbiIgdHlwZT0iaW1hZ2UvcG5nIiBocmVmPSJmYXZpY29uLmljbyIvPgpleGl0CjxzY3JpcHQgdHlwZT10ZXh0L2phdmFzY3JpcHQ+IGRvY3VtZW50LmJvZHkuaW5uZXJIVE1MID0gOyA8L3NjcmlwdD4KPCEtLSBEQU5HRVI6IFdBUk5JTkc6IERvIE5PVCBlZGl0LCBkbyBOT1QgdXNlIGFzIHNoZWxsIHNjcmlwdC4gQWx0aG91Z2ggc2VsZi1tb2RpZnlpbmcgZmVhdHVyZXMgbWF5IGJlIHByZXNlbnQsIHRoaXMgZW50aXJlIGZpbGUgaXMgTk9UIHByb3Blcmx5IHNlbGYtbW9kaWZ5aW5nLiAtLT4K' | base64 -d > "$scriptAbsoluteFolder"/index.html
 	
 	cat "$scriptAbsoluteFolder"/"$currentScriptBasename"_presentation.html >> "$scriptAbsoluteFolder"/index.html

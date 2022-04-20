@@ -53,6 +53,18 @@ https://u298813-sub7.your-storagebox.de/ubcp/package_ubiquitous_bash-msw-rotten.
 
 https://u298813-sub7.your-storagebox.de/ubcp/package_ubcp-core.7z
 
+__ Other __
+
+Username   u298813-sub10
+Password   OJgZTe0yNilixhRy
+
+_r '
+<a href="https://u298813-sub10.your-storagebox.de/">https://u298813-sub10.your-storagebox.de/</a>
+'
+
+
+Public files not officially at a &#39;release&#39; directory may be automatically generated, mostly for diagnostics. Usually, not expected useful for developer or end user. Completeness and notability may not be expected.
+
 __ Authentic Software __
 Official publicly accessible locations of Soaring Distributions LLC are normally HTTPS or similarly provable sites controlled by Soaring Distributions LLC.
 
@@ -108,9 +120,6 @@ GNU Affero General Public License for more details.
 
 You should have received a copy of the GNU Affero General Public License
 along with site_distLLC  If not, see &lt;http://www.gnu.org/licenses/&gt;.
-
-
-
 
 
 
