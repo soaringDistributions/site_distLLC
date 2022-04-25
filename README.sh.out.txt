@@ -101,8 +101,15 @@ Distributing individual files or pieces of files without other relevant informat
 Some software may be created by Soaring Distributions LLC manager, mirage335, for and on behalf of Soaring Distributions LLC.
 
 __ Reference __
-
 https://en.wikipedia.org/wiki/Series_of_tubes
+
+http://ipw2100.sourceforge.net/firmware_faq.php
+
+https://www.nvidia.com/en-us/drivers/geforce-license/
+	&#39;Linux/FreeBSD Exception. Notwithstanding the foregoing terms of Section 2.1.1, SOFTWARE designed exclusively for use on the Linux or FreeBSD operating systems, or other operating systems derived from the source code to these operating systems, may be copied and redistributed, provided that the binary files thereof are not modified in any way (except for unzipping of compressed files).&#39;
+
+https://packages.debian.org/es/bullseye/firmware-ipw2x00
+https://packages.debian.org/es/bullseye/arm/firmware-ivtv
 
 __ Copyright __
 
