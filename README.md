@@ -328,12 +328,12 @@ receive and run software from third-party distributors (eg. if Soaring
 Distributions provides a script to download and run NVIDIA proprietary 
 drivers), and if this is perceived as some issue, any 
 &#39;cease-and-desist&#39; should be sent directly to those third party 
-distributors (ie. NVIDIA, Debian, Ubuntu, etc), NOT to Soaring 
+distributors (ie. NVIDIA, Debian, Ubuntu, OEMs, etc), NOT to Soaring 
 Distributions LLC itself. Soaring Distributions LLC may not be able to 
 prove, but does not discount, that those distributors (ie. at least NVIDIA) 
-may be coercively, flagrantly, willfully, commercially, to the extent of 
-many years and multiple billions of dollars, violating the GPLv2 copyright 
-license of the Linux kernel.
+may be coercively, flagrantly, willfully, exploiting for commercial gain, 
+to the extent of many years and multiple billions of dollars, violating the 
+GPLv2 copyright license of the Linux kernel.
 
 To the extent legally possible, Soaring Distributions LLC should be 
 reasonably expected to publish, and specifically make relevant 
