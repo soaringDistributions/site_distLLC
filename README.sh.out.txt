@@ -100,10 +100,39 @@ Distributing individual files or pieces of files without other relevant informat
 
 Some software may be created by Soaring Distributions LLC manager, mirage335, for and on behalf of Soaring Distributions LLC.
 
+ '_page'PageBreak -H-H-H-H- PageBreak -H-H-H-H- PageBreak -H-H-H-H- PageBreak -H-H-H-H- PageBreak
+
+
+__ NVIDIA __
+Use of NVIDIA hardware may require users to have an internet connection or similar convenience to download and run theirselves.
+
+A syscall exception may be what allows distribution of NVIDIA proprietary binary Linux modules at all.
+
+Meanwhile, Soaring Distributions LLC is at least reluctant if not unwilling to itself distribute binary Linux kernel modules.
+
 __ Reference __
 https://en.wikipedia.org/wiki/Series_of_tubes
 
 http://ipw2100.sourceforge.net/firmware_faq.php
+
+https://en.wikipedia.org/wiki/Free_and_open-source_graphics_device_driver#ATI_and_AMD
+https://en.wikipedia.org/wiki/GNU_General_Public_License#Linking_and_derived_works
+https://tldp.org/HOWTO/Module-HOWTO/copyright.html
+https://arstechnica.com/information-technology/2006/12/8428/
+
+https://gitweb.gentoo.org/repo/gentoo.git/tree/x11-drivers/nvidia-drivers/nvidia-drivers-510.60.02.ebuild
+http://gpo.zugaina.org/AJAX/Ebuild/53561524/View
+	&#39;SRC_URI&#39; &#39;https://us.download.nvidia.com/XFree86/Linux-x86_64/${PV}/NVIDIA-Linux-x86_64-${PV}.run&#39;
+		ie. https://us.download.nvidia.com/XFree86/Linux-x86_64/510.60.02/NVIDIA-Linux-x86_64-510.60.02.run
+
+https://wiki.gentoo.org/wiki/NVIDIA/nvidia-drivers
+	&#39;wrapper functions that will compile against the Linux kernel&#39;
+
+https://opensource.stackexchange.com/questions/1477/do-i-have-to-disclose-the-source-code-of-a-linux-driver-i-have-not-developed
+	&#39;But, if the driver doesn&#39;t directly link to the kernel, that may not apply. I remember in the past some graphics drivers (I think NVidia, but aren&#39;t sure) had two parts. One GPL-part included in the kernel and offering an interface for the second part, that was proprietary. I don&#39;t know how legally stable this construct is, but it may work.&#39;
+
+https://www.kernel.org/doc/html/latest/process/license-rules.html
+	&#39;GPL-2.0, with an explicit syscall exception&#39;
 
 https://www.nvidia.com/en-us/drivers/geforce-license/
 	&#39;Linux/FreeBSD Exception. Notwithstanding the foregoing terms of Section 2.1.1, SOFTWARE designed exclusively for use on the Linux or FreeBSD operating systems, or other operating systems derived from the source code to these operating systems, may be copied and redistributed, provided that the binary files thereof are not modified in any way (except for unzipping of compressed files).&#39;
