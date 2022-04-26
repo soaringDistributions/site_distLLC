@@ -76,7 +76,7 @@ https://soaringDistributions.github.io/site_distLLC
 (hosted by GitHub)
 
 
-Unless officially and provably directed to do so by authorized personnel of Soaring Distributions LLC (ie. manager of Soaring Distributions LLC, mirage335), or unless the products are provably identical, Soaring Distributions LLC cannot reasonably guarantee similar expecations for products obtained from other locations.
+Unless officially and provably directed to do so by authorized personnel of Soaring Distributions LLC (ie. manager of Soaring Distributions LLC, mirage335), or unless the products are provably identical, Soaring Distributions LLC cannot reasonably guarantee similar expectations for products obtained from other locations.
 
  '_page'PageBreak -H-H-H-H- PageBreak -H-H-H-H- PageBreak -H-H-H-H- PageBreak -H-H-H-H- PageBreak
 

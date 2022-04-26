@@ -246,7 +246,7 @@ https://soaringDistributions.github.io/site_distLLC
 Unless officially and provably directed to do so by authorized personnel of 
 Soaring Distributions LLC (ie. manager of Soaring Distributions LLC, 
 mirage335), or unless the products are provably identical, Soaring 
-Distributions LLC cannot reasonably guarantee similar expecations for 
+Distributions LLC cannot reasonably guarantee similar expectations for 
 products obtained from other locations.
 <!-- # --></pre><!-- scriptedIllustrator_markup_uk4uPhB663kVcygT0q
 '
