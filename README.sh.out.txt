@@ -124,6 +124,7 @@ http://ipw2100.sourceforge.net/firmware_faq.php
 
 https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 https://en.wikipedia.org/wiki/Open_source_license_litigation
+https://slashdot.org/story/06/05/14/2059242/kororaa-accused-of-violating-gpl
 
 https://en.wikipedia.org/wiki/Free_and_open-source_graphics_device_driver#ATI_and_AMD
 https://en.wikipedia.org/wiki/GNU_General_Public_License#Linking_and_derived_works
