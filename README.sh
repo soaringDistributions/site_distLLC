@@ -207,7 +207,10 @@ https://www.nvidia.com/en-us/drivers/geforce-license/
 
 https://packages.debian.org/es/bullseye/firmware-ipw2x00
 https://packages.debian.org/es/bullseye/arm/firmware-ivtv'
-_ _page
+
+
+
+_page
 _heading2 'Copyright'
 _t '
 This file is part of site_distLLC
