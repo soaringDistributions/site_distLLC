@@ -317,7 +317,17 @@ scriptedIllustrator_markup_uk4uPhB663kVcygT0q --><!-- # --><pre style="margin-to
 similar convenience to download and run theirselves.
 
 A syscall exception may be what allows distribution of NVIDIA proprietary 
-binary Linux modules at all.
+binary Linux modules at all. Or, so long as NVIDIA can dubiously claim 
+their proprietary binary Linux kernel module may not be a derived work of a 
+GPLv2 licensed Linux kernel, NVIDIA may argue that an &#39;attempt 
+otherwise to&#39; &#39;sublicense&#39; the Linux kernel has not occurred, 
+and thus NVIDIA may claim their rights did not yet &#39;automatically 
+terminate&#39;. Seemingly, the absence of distribution of LiveCD/LiveUSB 
+images with NVIDIA drivers included and installed suggests the open-source 
+community does not find any such arguments compelling. Yet, while there 
+apparently have been US court cases involving the GPLv2 copyright license, 
+the NVIDIA proprietary kernel driver issue has apparently not been raised 
+as of 2022.
 
 Meanwhile, Soaring Distributions LLC is at least reluctant if not unwilling 
 to itself distribute binary Linux kernel modules.
@@ -329,11 +339,11 @@ Distributions provides a script to download and run NVIDIA proprietary
 drivers), and if this is perceived as some issue, any 
 &#39;cease-and-desist&#39; should be sent directly to those third party 
 distributors (ie. NVIDIA, Debian, Ubuntu, OEMs, etc), NOT to Soaring 
-Distributions LLC itself. Soaring Distributions LLC may not be able to 
-prove, but does not discount, that those distributors (ie. at least NVIDIA) 
-may be coercively, flagrantly, willfully, exploiting for commercial gain, 
-to the extent of many years and multiple billions of dollars, violating the 
-GPLv2 copyright license of the Linux kernel.
+Distributions LLC itself. Soaring Distributions LLC may not yet on its own 
+be able to prove, but does not discount, that those distributors (ie. at 
+least NVIDIA) may be coercively, flagrantly, willfully, exploiting for 
+commercial gain, to the extent of many years and multiple billions of 
+dollars, violating the GPLv2 copyright license of the Linux kernel.
 
 To the extent legally possible, Soaring Distributions LLC should be 
 reasonably expected to publish, and specifically make relevant 
@@ -349,7 +359,12 @@ fi
 _t '
 scriptedIllustrator_markup_uk4uPhB663kVcygT0q --><!-- # --><pre style="margin-top: 0px;margin-bottom: 0px;white-space: pre-wrap;">https://en.wikipedia.org/wiki/Series_of_tubes
 
+
 http://ipw2100.sourceforge.net/firmware_faq.php
+
+
+https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+https://en.wikipedia.org/wiki/Open_source_license_litigation
 
 https://en.wikipedia.org/wiki/Free_and_open-source_graphics_device_driver#AT
 I_and_AMD
