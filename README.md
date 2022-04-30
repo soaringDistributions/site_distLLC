@@ -85,6 +85,32 @@ scriptedIllustrator_markup_uk4uPhB663kVcygT0q --><!-- # --><pre style="margin-to
 Do NOT run NVIDIA hardware with Linux and then redistribute that copy.
 <!-- # --></pre><!-- scriptedIllustrator_markup_uk4uPhB663kVcygT0q
 '
+ '_heading2' 'Authentic Software'
+if false; then true; # -->
+<!-- # --><h2>Authentic Software</h2>
+<!--
+fi
+_t '
+scriptedIllustrator_markup_uk4uPhB663kVcygT0q --><!-- # --><pre style="margin-top: 0px;margin-bottom: 0px;white-space: pre-wrap;">Official publicly accessible locations of Soaring Distributions LLC are 
+normally HTTPS or similarly provable sites controlled by Soaring 
+Distributions LLC.
+
+https://u298813-sub*.your-storagebox.de
+https://u298813-sub7.your-storagebox.de
+(hosted by Hetzner)
+
+https://github.com/soaringDistributions
+https://soaringDistributions.github.io/site_distLLC
+(hosted by GitHub)
+
+
+Unless officially and provably directed to do so by authorized personnel of 
+Soaring Distributions LLC (ie. manager of Soaring Distributions LLC, 
+mirage335), or unless the products are provably identical, Soaring 
+Distributions LLC cannot reasonably guarantee similar expectations for 
+products obtained from other locations.
+<!-- # --></pre><!-- scriptedIllustrator_markup_uk4uPhB663kVcygT0q
+'
  '_heading2' 'Products - End User'
 if false; then true; # -->
 <!-- # --><h2>Products - End User</h2>
@@ -129,6 +155,15 @@ scriptedIllustrator_markup_uk4uPhB663kVcygT0q --><!-- # --><pre style="margin-to
 <!-- # --></pre><!-- scriptedIllustrator_markup_uk4uPhB663kVcygT0q
 '
 _t '
+scriptedIllustrator_markup_uk4uPhB663kVcygT0q --><!-- # --><pre style="margin-top: 0px;margin-bottom: 0px;white-space: pre-wrap;"> 
+<!-- # --></pre><!-- scriptedIllustrator_markup_uk4uPhB663kVcygT0q
+'
+_r '
+scriptedIllustrator_markup_uk4uPhB663kVcygT0q -->
+<a href="https://github.com/soaringDistributions/ubDistBuild/raw/main/_lib/custom/package_kde.tar.xz">https://github.com/soaringDistributions/ubDistBuild/raw/main/_lib/custom/package_kde.tar.xz</a>
+<!-- scriptedIllustrator_markup_uk4uPhB663kVcygT0q
+'
+_t '
 scriptedIllustrator_markup_uk4uPhB663kVcygT0q --><!-- # --><pre style="margin-top: 0px;margin-bottom: 0px;white-space: pre-wrap;">
 
 Installing some of these products correctly may require &#39;Run as 
@@ -152,6 +187,11 @@ scriptedIllustrator_markup_uk4uPhB663kVcygT0q -->
 <a href="https://u298813-sub7.your-storagebox.de/">https://u298813-sub7.your-storagebox.de/</a>
 <!-- scriptedIllustrator_markup_uk4uPhB663kVcygT0q
 '
+_r '
+scriptedIllustrator_markup_uk4uPhB663kVcygT0q -->
+<a href="https://github.com/soaringDistributions">https://github.com/soaringDistributions</a>
+<!-- scriptedIllustrator_markup_uk4uPhB663kVcygT0q
+'
 _t '
 scriptedIllustrator_markup_uk4uPhB663kVcygT0q --><!-- # --><pre style="margin-top: 0px;margin-bottom: 0px;white-space: pre-wrap;"> 
 <!-- # --></pre><!-- scriptedIllustrator_markup_uk4uPhB663kVcygT0q
@@ -162,7 +202,7 @@ scriptedIllustrator_markup_uk4uPhB663kVcygT0q --><!-- # --><pre style="margin-to
 '
 _r '
 scriptedIllustrator_markup_uk4uPhB663kVcygT0q -->
-<a href="https://u298813-sub7.your-storagebox.de/">https://u298813-sub7.your-storagebox.de/mirage335TechArchive_discImages/</a>
+<a href="https://u298813-sub7.your-storagebox.de/mirage335TechArchive_discImages/">https://u298813-sub7.your-storagebox.de/mirage335TechArchive_discImages/</a>
 <!-- scriptedIllustrator_markup_uk4uPhB663kVcygT0q
 '
 _t '
@@ -205,6 +245,21 @@ scriptedIllustrator_markup_uk4uPhB663kVcygT0q --><!-- # --><pre style="margin-to
 https://u298813-sub7.your-storagebox.de/ubcp/package_ubcp-core.7z
 <!-- # --></pre><!-- scriptedIllustrator_markup_uk4uPhB663kVcygT0q
 '
+_t '
+scriptedIllustrator_markup_uk4uPhB663kVcygT0q --><!-- # --><pre style="margin-top: 0px;margin-bottom: 0px;white-space: pre-wrap;"> 
+<!-- # --></pre><!-- scriptedIllustrator_markup_uk4uPhB663kVcygT0q
+'
+_t '
+scriptedIllustrator_markup_uk4uPhB663kVcygT0q --><!-- # --><pre style="margin-top: 0px;margin-bottom: 0px;white-space: pre-wrap;">
+https://github.com/soaringDistributions/ubDistBuild/raw/main/_lib/custom/pac
+kage_kde.tar.xz
+<!-- # --></pre><!-- scriptedIllustrator_markup_uk4uPhB663kVcygT0q
+'
+ '_page'
+if false; then true; # -->
+<!-- # --><div style="page-break-before: always;margin: 0;padding: 0; border-width: 0px;"> </div>
+<!--
+fi
  '_heading2' 'Other'
 if false; then true; # -->
 <!-- # --><h2>Other</h2>
@@ -231,36 +286,7 @@ useful for developer or end user. Completeness and notability may not be
 expected.
 <!-- # --></pre><!-- scriptedIllustrator_markup_uk4uPhB663kVcygT0q
 '
- '_heading2' 'Authentic Software'
-if false; then true; # -->
-<!-- # --><h2>Authentic Software</h2>
-<!--
-fi
-_t '
-scriptedIllustrator_markup_uk4uPhB663kVcygT0q --><!-- # --><pre style="margin-top: 0px;margin-bottom: 0px;white-space: pre-wrap;">Official publicly accessible locations of Soaring Distributions LLC are 
-normally HTTPS or similarly provable sites controlled by Soaring 
-Distributions LLC.
-
-https://u298813-sub*.your-storagebox.de
-https://u298813-sub7.your-storagebox.de
-(hosted by Hetzner)
-
-https://soaringDistributions.github.io/site_distLLC
-(hosted by GitHub)
-
-
-Unless officially and provably directed to do so by authorized personnel of 
-Soaring Distributions LLC (ie. manager of Soaring Distributions LLC, 
-mirage335), or unless the products are provably identical, Soaring 
-Distributions LLC cannot reasonably guarantee similar expectations for 
-products obtained from other locations.
-<!-- # --></pre><!-- scriptedIllustrator_markup_uk4uPhB663kVcygT0q
-'
- '_page'
-if false; then true; # -->
-<!-- # --><div style="page-break-before: always;margin: 0;padding: 0; border-width: 0px;"> </div>
-<!--
-fi
+ '_' '_page'
  '_heading2' 'Usage'
 if false; then true; # -->
 <!-- # --><h2>Usage</h2>

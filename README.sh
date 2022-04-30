@@ -69,6 +69,22 @@ _t 'Please mark physical copies of Linux.
 
 Do NOT run NVIDIA hardware with Linux and then redistribute that copy.'
 
+
+_heading2 'Authentic Software'
+_t 'Official publicly accessible locations of Soaring Distributions LLC are normally HTTPS or similarly provable sites controlled by Soaring Distributions LLC.
+
+https://u298813-sub*.your-storagebox.de
+https://u298813-sub7.your-storagebox.de
+(hosted by Hetzner)
+
+https://github.com/soaringDistributions
+https://soaringDistributions.github.io/site_distLLC
+(hosted by GitHub)
+
+
+Unless officially and provably directed to do so by authorized personnel of Soaring Distributions LLC (ie. manager of Soaring Distributions LLC, mirage335), or unless the products are provably identical, Soaring Distributions LLC cannot reasonably guarantee similar expectations for products obtained from other locations.'
+
+
 _heading2 'Products - End User'
 _t 'Username   u298813-sub7
 Password   wnEtWtT9UDyJiCGw
@@ -81,6 +97,8 @@ _t ' '
 _t ' '
 _r '<a href="https://u298813-sub7.your-storagebox.de/ubcp/package_ubiquitous_bash-msw.7z">https://u298813-sub7.your-storagebox.de/ubcp/package_ubiquitous_bash-msw.7z</a>'
 _t ' '
+_t ' '
+_r '<a href="https://github.com/soaringDistributions/ubDistBuild/raw/main/_lib/custom/package_kde.tar.xz">https://github.com/soaringDistributions/ubDistBuild/raw/main/_lib/custom/package_kde.tar.xz</a>'
 
 
 _t '
@@ -94,9 +112,10 @@ Password   wnEtWtT9UDyJiCGw
 
 '
 _r '<a href="https://u298813-sub7.your-storagebox.de/">https://u298813-sub7.your-storagebox.de/</a>'
+_r '<a href="https://github.com/soaringDistributions">https://github.com/soaringDistributions</a>'
 _t ' '
 _t ' '
-_r '<a href="https://u298813-sub7.your-storagebox.de/">https://u298813-sub7.your-storagebox.de/mirage335TechArchive_discImages/</a>'
+_r '<a href="https://u298813-sub7.your-storagebox.de/mirage335TechArchive_discImages/">https://u298813-sub7.your-storagebox.de/mirage335TechArchive_discImages/</a>'
 _t ' '
 _t ' '
 _t 'https://u298813-sub7.your-storagebox.de/mirage335KernelBuild/linux-lts-amd64-debian.tar.gz'
@@ -105,9 +124,11 @@ _t ' '
 _t 'https://u298813-sub7.your-storagebox.de/ubcp/'
 _t 'https://u298813-sub7.your-storagebox.de/ubcp/package_ubiquitous_bash-msw-rotten.7z'
 _t 'https://u298813-sub7.your-storagebox.de/ubcp/package_ubcp-core.7z'
+_t ' '
+_t 'https://github.com/soaringDistributions/ubDistBuild/raw/main/_lib/custom/package_kde.tar.xz'
 
 
-
+_page
 _heading2 'Other'
 _t 'Username   u298813-sub10
 Password   OJgZTe0yNilixhRy
@@ -121,24 +142,10 @@ Public files not officially at a &#39;release&#39; directory may be automaticall
 
 
 
-_heading2 'Authentic Software'
-_t 'Official publicly accessible locations of Soaring Distributions LLC are normally HTTPS or similarly provable sites controlled by Soaring Distributions LLC.
-
-https://u298813-sub*.your-storagebox.de
-https://u298813-sub7.your-storagebox.de
-(hosted by Hetzner)
-
-https://soaringDistributions.github.io/site_distLLC
-(hosted by GitHub)
-
-
-Unless officially and provably directed to do so by authorized personnel of Soaring Distributions LLC (ie. manager of Soaring Distributions LLC, mirage335), or unless the products are provably identical, Soaring Distributions LLC cannot reasonably guarantee similar expectations for products obtained from other locations.'
 
 
 
-
-
-_page
+_ _page
 _heading2 'Usage'
 _t 'Files may be downloaded from command-line.'
 _o _messagePlain_probe 'wget --user u298813-sub7 --password wnEtWtT9UDyJiCGw &#39;https://u298813-sub7.your-storagebox.de/file&#39;'

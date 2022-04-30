@@ -7,6 +7,20 @@ Please mark physical copies of Linux.
 
 Do NOT run NVIDIA hardware with Linux and then redistribute that copy.
 
+__ Authentic Software __
+Official publicly accessible locations of Soaring Distributions LLC are normally HTTPS or similarly provable sites controlled by Soaring Distributions LLC.
+
+https://u298813-sub*.your-storagebox.de
+https://u298813-sub7.your-storagebox.de
+(hosted by Hetzner)
+
+https://github.com/soaringDistributions
+https://soaringDistributions.github.io/site_distLLC
+(hosted by GitHub)
+
+
+Unless officially and provably directed to do so by authorized personnel of Soaring Distributions LLC (ie. manager of Soaring Distributions LLC, mirage335), or unless the products are provably identical, Soaring Distributions LLC cannot reasonably guarantee similar expectations for products obtained from other locations.
+
 __ Products - End User __
 
 Username   u298813-sub7
@@ -25,6 +39,10 @@ _r '
 <a href="https://u298813-sub7.your-storagebox.de/ubcp/package_ubiquitous_bash-msw.7z">https://u298813-sub7.your-storagebox.de/ubcp/package_ubiquitous_bash-msw.7z</a>
 '
  
+ 
+_r '
+<a href="https://github.com/soaringDistributions/ubDistBuild/raw/main/_lib/custom/package_kde.tar.xz">https://github.com/soaringDistributions/ubDistBuild/raw/main/_lib/custom/package_kde.tar.xz</a>
+'
 
 
 Installing some of these products correctly may require &#39;Run as Administrator&#39;, &#39;sudo&#39;, or similar.
@@ -37,10 +55,13 @@ Password   wnEtWtT9UDyJiCGw
 _r '
 <a href="https://u298813-sub7.your-storagebox.de/">https://u298813-sub7.your-storagebox.de/</a>
 '
+_r '
+<a href="https://github.com/soaringDistributions">https://github.com/soaringDistributions</a>
+'
  
  
 _r '
-<a href="https://u298813-sub7.your-storagebox.de/">https://u298813-sub7.your-storagebox.de/mirage335TechArchive_discImages/</a>
+<a href="https://u298813-sub7.your-storagebox.de/mirage335TechArchive_discImages/">https://u298813-sub7.your-storagebox.de/mirage335TechArchive_discImages/</a>
 '
  
  
@@ -55,6 +76,12 @@ https://u298813-sub7.your-storagebox.de/ubcp/
 https://u298813-sub7.your-storagebox.de/ubcp/package_ubiquitous_bash-msw-rotten.7z
 
 https://u298813-sub7.your-storagebox.de/ubcp/package_ubcp-core.7z
+ 
+
+https://github.com/soaringDistributions/ubDistBuild/raw/main/_lib/custom/package_kde.tar.xz
+
+ '_page'PageBreak -H-H-H-H- PageBreak -H-H-H-H- PageBreak -H-H-H-H- PageBreak -H-H-H-H- PageBreak
+
 
 __ Other __
 
@@ -67,22 +94,6 @@ _r '
 
 
 Public files not officially at a &#39;release&#39; directory may be automatically generated, mostly for diagnostics. Usually, not expected useful for developer or end user. Completeness and notability may not be expected.
-
-__ Authentic Software __
-Official publicly accessible locations of Soaring Distributions LLC are normally HTTPS or similarly provable sites controlled by Soaring Distributions LLC.
-
-https://u298813-sub*.your-storagebox.de
-https://u298813-sub7.your-storagebox.de
-(hosted by Hetzner)
-
-https://soaringDistributions.github.io/site_distLLC
-(hosted by GitHub)
-
-
-Unless officially and provably directed to do so by authorized personnel of Soaring Distributions LLC (ie. manager of Soaring Distributions LLC, mirage335), or unless the products are provably identical, Soaring Distributions LLC cannot reasonably guarantee similar expectations for products obtained from other locations.
-
- '_page'PageBreak -H-H-H-H- PageBreak -H-H-H-H- PageBreak -H-H-H-H- PageBreak -H-H-H-H- PageBreak
-
 
 __ Usage __
 
