@@ -338,6 +338,19 @@ Some software may be created by Soaring Distributions LLC manager,
 mirage335, for and on behalf of Soaring Distributions LLC.
 <!-- # --></pre><!-- scriptedIllustrator_markup_uk4uPhB663kVcygT0q
 '
+ '_heading2' 'Safety'
+if false; then true; # -->
+<!-- # --><h2>Safety</h2>
+<!--
+fi
+_t '
+scriptedIllustrator_markup_uk4uPhB663kVcygT0q --><!-- # --><pre style="margin-top: 0px;margin-bottom: 0px;white-space: pre-wrap;">
+Passwords, SSH identity, OpenSSL self-signed certificates, etc, may not be 
+different for copies of pre-built images, in spite of some efforts by 
+Soaring Distributions LLC to remove such. Change if this may be an issue 
+(ie. if network login may be possible through SSH, CUPS, SAMBA, etc).
+<!-- # --></pre><!-- scriptedIllustrator_markup_uk4uPhB663kVcygT0q
+'
  '_page'
 if false; then true; # -->
 <!-- # --><div style="page-break-before: always;margin: 0;padding: 0; border-width: 0px;"> </div>

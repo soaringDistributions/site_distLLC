@@ -115,6 +115,10 @@ Distributing individual files or pieces of files without other relevant informat
 
 Some software may be created by Soaring Distributions LLC manager, mirage335, for and on behalf of Soaring Distributions LLC.
 
+__ Safety __
+
+Passwords, SSH identity, OpenSSL self-signed certificates, etc, may not be different for copies of pre-built images, in spite of some efforts by Soaring Distributions LLC to remove such. Change if this may be an issue (ie. if network login may be possible through SSH, CUPS, SAMBA, etc).
+
  '_page'PageBreak -H-H-H-H- PageBreak -H-H-H-H- PageBreak -H-H-H-H- PageBreak -H-H-H-H- PageBreak
 
 
