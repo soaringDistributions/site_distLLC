@@ -358,7 +358,7 @@ may be able to set these randomly.
 
 Passwords may be set randomly, to disable login except by autologin or 
 cloud provider. Locking a desktop session (eg. with "Ctrl+Alt+L" may not be 
-easily reversible.
+easily reversible).
 <!-- # --></pre><!-- scriptedIllustrator_markup_uk4uPhB663kVcygT0q
 '
  '_page'
