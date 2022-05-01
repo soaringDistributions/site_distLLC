@@ -120,7 +120,7 @@ Pre-built disk images are a last resort, mostly for diagnostics with physical ac
 
 Passwords, SSH identity, OpenSSL self-signed certificates, etc, may not be different for copies of pre-built images, in spite of some efforts by Soaring Distributions LLC to remove such. Change if this may be an issue (ie. if network login may be possible through SSH, CUPS, SAMBA, etc). Scripts (ie. &#39;rotten_install.sh&#39; by manager &#39;mirage335&#39;) may be able to set these randomly.
 
-Passwords may be set randomly, to disable login except by autologin or cloud provider. Locking a desktop session (eg. with "Ctrl+Alt+L" may not be easily reversible).
+Passwords may be set randomly, to disable login except by autologin or cloud provider. Locking a desktop session (eg. with "Ctrl+Alt+L") may not be easily reversible.
 
  '_page'PageBreak -H-H-H-H- PageBreak -H-H-H-H- PageBreak -H-H-H-H- PageBreak -H-H-H-H- PageBreak
 
