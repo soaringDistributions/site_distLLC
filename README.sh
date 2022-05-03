@@ -70,6 +70,7 @@ _t 'Please mark physical copies of Linux.
 Do NOT run NVIDIA hardware with Linux and then redistribute that copy.'
 
 
+
 _heading2 'Authentic Software'
 _t 'Official publicly accessible locations of Soaring Distributions LLC are normally HTTPS or similarly provable sites controlled by Soaring Distributions LLC.
 
@@ -107,6 +108,12 @@ Installing some of these products correctly may require &#39;Run as Administrato
 
 
 _heading2 'Products - Developer'
+
+_r '<a href="https://xkcd.com/949/">'
+_picture 'https://imgs.xkcd.com/comics/file_transfer.png' '240px'
+_r '</a>'
+
+
 _t 'Username   u298813-sub7
 Password   wnEtWtT9UDyJiCGw
 
@@ -130,6 +137,12 @@ _t 'https://github.com/soaringDistributions/ubDistBuild/raw/main/_lib/custom/pac
 
 
 _page
+
+
+
+
+
+
 _heading2 'Other'
 _t 'Username   u298813-sub10
 Password   OJgZTe0yNilixhRy
@@ -176,6 +189,22 @@ Some software may be created by Soaring Distributions LLC manager, mirage335, fo
 
 
 
+
+
+_heading2 'Sponsoring'
+_t 'Soaring Distributions LLC may not have much to give, but those who ease moving virtual machine disk images and such, or reduce to need to do so, are very greatly appreciated, and very relevant to the purpose of Soaring Distributions LLC as well as to users of its products. Soaring Distributions LLC normally regards such as charitable contributions that are expected to reduce its own risks from fewer than desired affordable (ie. $$$/GB transferred and $$$/GB stored) file transfer resources. Soaring Distributions LLC is also concerned about end-users having sufficiently usable file transfer resources for their own use and modification of products. Soaring Distributions LLC recoginzes it is part of a technology ecosystem, which must remain healthy.
+
+'
+_r '<a href="https://github.com/orgs/soaringDistributions/sponsoring">https://github.com/orgs/soaringDistributions/sponsoring</a>'
+_t '
+
+*) Croc ( https://github.com/schollz ) is especially appreciated for the ability to immediately transfer such things as shell scripts, installers, or maybe even occasional compressed VirtualMachine images.'
+
+
+
+
+
+
 _heading2 'Safety'
 _t 'Pre-built disk images are a last resort, mostly for diagnostics with physical access and for embedded. If your cloud provider has &#39;cloud-init&#39; or similar, prefer that, instead of pre-built desktop/VM disk images.
 
@@ -214,6 +243,22 @@ If Soaring Distributions LLC distributes software which users may run to receive
 _ _page
 _heading2 'Reference'
 _t 'https://en.wikipedia.org/wiki/Series_of_tubes
+
+https://xkcd.com/949/
+	&#39;I like how we&#39;ve had the internet for decades, yet &quot;sending files&quot; is something early adopters are still figuring out how to do.&#39;
+		Still very much an issue in 2022. Is there really a good reason for that?
+
+https://xkcd.com/license.html
+	&#39;Creative Commons Attribution-NonCommercial 2.5 License.&#39;
+
+https://github.com/dutchcoders/transfer.sh/issues/181
+	Apparently the limit was reduced from unlimited, to 10GB, to 1GB, to <<1GB, specifically to prevent &quot;sending files&quot; . Does the absence of such basic internet functionality for developers really benefit anyone?
+
+https://github.com/schollz/croc/issues/437
+	&#39;Croc freezes/stalls during large file transfer&#39;
+
+https://github.com/schollz/croc/issues/453
+
 
 
 http://ipw2100.sourceforge.net/firmware_faq.php
