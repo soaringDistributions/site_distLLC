@@ -137,6 +137,16 @@ _r '
 
 *) Croc ( https://github.com/schollz ) is especially appreciated for the ability to immediately transfer such things as shell scripts, installers, or maybe even occasional compressed VirtualMachine images.
 
+ '_page'PageBreak -H-H-H-H- PageBreak -H-H-H-H- PageBreak -H-H-H-H- PageBreak -H-H-H-H- PageBreak
+
+
+__ Script Consumers __
+Some scripts may download products of Soaring Distributions LLC for internal use, developers, end users, etc. If public services of Soaring Distributions LLC change, adding such new upstream information may be necessary. Some of these may be known to and/or used by Soaring Distributions LLC internally.
+
+*) ubiquitous_bash - ubiquitous_bash/_lib/kit/install/cloud/cloud-init/zRotten/zMinimal
+*) https://github.com/soaringDistributions/ubDistFetch
+*) https://github.com/soaringDistributions/ubDistBuild
+
 __ Safety __
 Pre-built disk images are a last resort, mostly for diagnostics with physical access and for embedded. If your cloud provider has &#39;cloud-init&#39; or similar, prefer that, instead of pre-built desktop/VM disk images.
 
