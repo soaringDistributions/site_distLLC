@@ -168,7 +168,7 @@ _ _page
 _heading2 'Usage'
 _t 'Files may be downloaded from command-line.'
 _o _messagePlain_probe 'wget --user u298813-sub7 --password wnEtWtT9UDyJiCGw &#39;https://u298813-sub7.your-storagebox.de/file&#39;'
-_o _messagePlain_probe 'axel -H "Authorization: Basic "$(echo -n "u298813-sub7:wnEtWtT9UDyJiCGw" | openssl base64) &#39;https://u298813-sub7.your-storagebox.de/file&#39;'
+_o _messagePlain_probe 'axel -n 12 -H "Authorization: Basic "$(echo -n "u298813-sub7:wnEtWtT9UDyJiCGw" | openssl base64) &#39;https://u298813-sub7.your-storagebox.de/file&#39;'
 
 _t '
 
