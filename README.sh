@@ -100,6 +100,11 @@ _r '<a href="https://u298813-sub7.your-storagebox.de/ubcp/package_ubiquitous_bas
 _t ' '
 _t ' '
 _r '<a href="https://github.com/soaringDistributions/ubDistBuild/raw/main/_lib/custom/package_kde.tar.xz">https://github.com/soaringDistributions/ubDistBuild/raw/main/_lib/custom/package_kde.tar.xz</a>'
+_t ' '
+_t ' '
+_r '<a href="https://u298813-sub7.your-storagebox.de/ubDistFetch/core.tar.xz">https://u298813-sub7.your-storagebox.de/ubDistFetch/core.tar.xz</a>'
+_t ' '
+_r '<a href="https://u298813-sub7.your-storagebox.de/ubDistBuild/package_image.tar.xz">https://u298813-sub7.your-storagebox.de/ubDistBuild/package_image.tar.xz</a>'
 
 
 _t '

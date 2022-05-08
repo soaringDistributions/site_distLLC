@@ -43,6 +43,15 @@ _r '
 _r '
 <a href="https://github.com/soaringDistributions/ubDistBuild/raw/main/_lib/custom/package_kde.tar.xz">https://github.com/soaringDistributions/ubDistBuild/raw/main/_lib/custom/package_kde.tar.xz</a>
 '
+ 
+ 
+_r '
+<a href="https://u298813-sub7.your-storagebox.de/ubDistFetch/core.tar.xz">https://u298813-sub7.your-storagebox.de/ubDistFetch/core.tar.xz</a>
+'
+ 
+_r '
+<a href="https://u298813-sub7.your-storagebox.de/ubDistBuild/package_image.tar.xz">https://u298813-sub7.your-storagebox.de/ubDistBuild/package_image.tar.xz</a>
+'
 
 
 Installing some of these products correctly may require &#39;Run as Administrator&#39;, &#39;sudo&#39;, or similar.
