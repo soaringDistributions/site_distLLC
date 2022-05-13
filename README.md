@@ -469,6 +469,12 @@ may be able to set these randomly.
 Passwords may be set randomly, to disable login except by autologin or 
 cloud provider. Locking a desktop session (eg. with "Ctrl+Alt+L") may not 
 be easily reversible.
+
+Copy-On-Write nesting performance issues and log tree corruption issues 
+with btrfs root filesystem, while expected not substantially consequential 
+(ie. still on par with ext4), may be possible. At some risk, &#39; btrfs 
+rescue zero-log /dev/sdX &#39; or similar may force continued booting of a 
+btrfs filesystem with log tree corruption.
 <!-- # --></pre><!-- scriptedIllustrator_markup_uk4uPhB663kVcygT0q
 '
  '_page'
@@ -485,7 +491,9 @@ _t '
 scriptedIllustrator_markup_uk4uPhB663kVcygT0q --><!-- # --><pre style="margin-top: 0px;margin-bottom: 0px;white-space: pre-wrap;">Users of NVIDIA hardware may require an internet connection or similar 
 convenience to download software, may have to run software theirselves, and 
 by running that software, may create resulting software that is not 
-distributable.
+distributable. Whether any recent announcements of supposed offical 
+open-source NVIDIA kernel drivers may result in distributable relevant 
+software may not be yet known.
 
 
 A syscall exception may be what allows distribution of NVIDIA proprietary 

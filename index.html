@@ -424,6 +424,8 @@ scriptedIllustrator_markup_uk4uPhB663kVcygT0q --><!-- # --><pre style="margin-to
 Passwords, SSH identity, OpenSSL self-signed certificates, etc, may not be different for copies of pre-built images, in spite of some efforts by Soaring Distributions LLC to remove such. Change if this may be an issue (ie. if network login may be possible through SSH, CUPS, SAMBA, etc). Scripts (ie. &#39;rotten_install.sh&#39; by manager &#39;mirage335&#39;) may be able to set these randomly.
 
 Passwords may be set randomly, to disable login except by autologin or cloud provider. Locking a desktop session (eg. with "Ctrl+Alt+L") may not be easily reversible.
+
+Copy-On-Write nesting performance issues and log tree corruption issues with btrfs root filesystem, while expected not substantially consequential (ie. still on par with ext4), may be possible. At some risk, &#39; btrfs rescue zero-log /dev/sdX &#39; or similar may force continued booting of a btrfs filesystem with log tree corruption.
 <!-- # --></pre><!-- scriptedIllustrator_markup_uk4uPhB663kVcygT0q
 '
  '_page'
@@ -437,7 +439,7 @@ if false; then true; # -->
 <!--
 fi
 _t '
-scriptedIllustrator_markup_uk4uPhB663kVcygT0q --><!-- # --><pre style="margin-top: 0px;margin-bottom: 0px;white-space: pre-wrap;">Users of NVIDIA hardware may require an internet connection or similar convenience to download software, may have to run software theirselves, and by running that software, may create resulting software that is not distributable.
+scriptedIllustrator_markup_uk4uPhB663kVcygT0q --><!-- # --><pre style="margin-top: 0px;margin-bottom: 0px;white-space: pre-wrap;">Users of NVIDIA hardware may require an internet connection or similar convenience to download software, may have to run software theirselves, and by running that software, may create resulting software that is not distributable. Whether any recent announcements of supposed offical open-source NVIDIA kernel drivers may result in distributable relevant software may not be yet known.
 
 
 A syscall exception may be what allows distribution of NVIDIA proprietary binary Linux modules at all. Or, so long as NVIDIA can dubiously claim their proprietary binary driver for Linux may not be a derived work of a GPLv2 licensed Linux kernel, NVIDIA may argue that an &#39;attempt otherwise to&#39; &#39;sublicense&#39; the Linux kernel has not occurred, and thus NVIDIA may claim their rights did not yet &#39;automatically terminate&#39;. Supplementing that, NVIDIA may claim the structure of their proprietary binary driver for Linux makes only the compiled combination of Linux kernel, &#39;glue layer&#39;, and proprietary binary blob a derived work of Linux and not distributable.

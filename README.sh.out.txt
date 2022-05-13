@@ -163,11 +163,13 @@ Passwords, SSH identity, OpenSSL self-signed certificates, etc, may not be diffe
 
 Passwords may be set randomly, to disable login except by autologin or cloud provider. Locking a desktop session (eg. with "Ctrl+Alt+L") may not be easily reversible.
 
+Copy-On-Write nesting performance issues and log tree corruption issues with btrfs root filesystem, while expected not substantially consequential (ie. still on par with ext4), may be possible. At some risk, &#39; btrfs rescue zero-log /dev/sdX &#39; or similar may force continued booting of a btrfs filesystem with log tree corruption.
+
  '_page'PageBreak -H-H-H-H- PageBreak -H-H-H-H- PageBreak -H-H-H-H- PageBreak -H-H-H-H- PageBreak
 
 
 __ NVIDIA __
-Users of NVIDIA hardware may require an internet connection or similar convenience to download software, may have to run software theirselves, and by running that software, may create resulting software that is not distributable.
+Users of NVIDIA hardware may require an internet connection or similar convenience to download software, may have to run software theirselves, and by running that software, may create resulting software that is not distributable. Whether any recent announcements of supposed offical open-source NVIDIA kernel drivers may result in distributable relevant software may not be yet known.
 
 
 A syscall exception may be what allows distribution of NVIDIA proprietary binary Linux modules at all. Or, so long as NVIDIA can dubiously claim their proprietary binary driver for Linux may not be a derived work of a GPLv2 licensed Linux kernel, NVIDIA may argue that an &#39;attempt otherwise to&#39; &#39;sublicense&#39; the Linux kernel has not occurred, and thus NVIDIA may claim their rights did not yet &#39;automatically terminate&#39;. Supplementing that, NVIDIA may claim the structure of their proprietary binary driver for Linux makes only the compiled combination of Linux kernel, &#39;glue layer&#39;, and proprietary binary blob a derived work of Linux and not distributable.
