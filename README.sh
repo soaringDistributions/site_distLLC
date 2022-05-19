@@ -177,7 +177,7 @@ Please use &#39;wget&#39; . Beware &#39;axel&#39; is STRONGLY DISCOURAGED for sh
 
 
 _heading3 'ubDistBuild'
-_t 'May be written to disk. For servers, beware, SSH may not be installed/enabled by default, SSH public keys may not be installed/enabled, and &#39;rootGrab&#39; may be undesired.
+_t 'May be written to disk. For servers, beware, SSH may not be installed/enabled by default, SSH password login may be disabled, SSH public keys may not be installed/enabled, and &#39;rootGrab&#39; may be an undesired default.
 
 '
 _o _messagePlain_probe_noindent 'apt-get update -y

@@ -373,8 +373,9 @@ fi
 _t '
 scriptedIllustrator_markup_uk4uPhB663kVcygT0q --><!-- # --><pre style="margin-top: 0px;margin-bottom: 0px;white-space: pre-wrap;">
 May be written to disk. For servers, beware, SSH may not be 
-installed/enabled by default, SSH public keys may not be installed/enabled, 
-and &#39;rootGrab&#39; may be undesired.
+installed/enabled by default, SSH password login may be disabled, SSH 
+public keys may not be installed/enabled, and &#39;rootGrab&#39; may be an 
+undesired default.
 
 <!-- # --></pre><!-- scriptedIllustrator_markup_uk4uPhB663kVcygT0q
 '
