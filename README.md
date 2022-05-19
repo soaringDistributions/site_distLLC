@@ -390,7 +390,7 @@ wget -qO- --user u298813-sub7 --password wnEtWtT9UDyJiCGw &#39;https://u298813-s
 
 startx
 # ...
-vncf <ip.addr>
+vncf &lt;ip.addr&gt;
 sudo gparted'
 if false; then true; # -->
 <!-- # --><pre style="-webkit-print-color-adjust: exact;background-color:#848484;margin-top: 0px;margin-bottom: 0px;white-space: pre-wrap;">
@@ -406,7 +406,7 @@ if false; then true; # -->
 <!-- # -->
 <!-- # -->startx
 <!-- # --># ...
-<!-- # -->vncf <ip.addr>
+<!-- # -->vncf &lt;ip.addr&gt;
 <!-- # -->sudo gparted</span>
 <!-- # --></pre>
 <!--

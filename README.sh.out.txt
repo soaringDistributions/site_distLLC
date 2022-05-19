@@ -139,7 +139,7 @@ May be written to disk. For servers, beware, SSH may not be installed/enabled by
 
 [0;37;100mstartx[0m
 [0;37;100m# ...[0m
-[0;37;100mvncf <ip.addr>[0m
+[0;37;100mvncf &lt;ip.addr&gt;[0m
 [0;37;100msudo gparted [0m[0m
 
  '_page'PageBreak -H-H-H-H- PageBreak -H-H-H-H- PageBreak -H-H-H-H- PageBreak -H-H-H-H- PageBreak

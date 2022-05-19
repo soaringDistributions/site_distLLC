@@ -192,7 +192,7 @@ wget -qO- --user u298813-sub7 --password wnEtWtT9UDyJiCGw &#39;https://u298813-s
 
 startx
 # ...
-vncf <ip.addr>
+vncf &lt;ip.addr&gt;
 sudo gparted'
 
 
