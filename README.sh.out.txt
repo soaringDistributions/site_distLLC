@@ -1,10 +1,13 @@
 
 _ Soaring Distributions LLC _
  '_picture' './logo_distLLC.png'
+_r '
+<a href="https://bit.ly/distllc">https://bit.ly/distllc</a> &lpar; <a href="https://soaringdistributions.github.io/site_distLLC/">https://soaringdistributions.github.io/site_distLLC/</a> &rpar;
+'
 
 __ Markings __
-Please mark physical copies of Linux.
 
+Please mark physical copies of Linux.
 Do NOT run NVIDIA hardware with Linux and then redistribute that copy.
 
 __ Authentic Software __
@@ -17,7 +20,6 @@ https://u298813-sub7.your-storagebox.de
 https://github.com/soaringDistributions
 https://soaringDistributions.github.io/site_distLLC
 (hosted by GitHub)
-
 
 Unless officially and provably directed to do so by authorized personnel of Soaring Distributions LLC (ie. manager of Soaring Distributions LLC, mirage335), or unless the products are provably identical, Soaring Distributions LLC cannot reasonably guarantee similar expectations for products obtained from other locations.
 
@@ -115,11 +117,118 @@ Public files not officially at a &#39;release&#39; directory may be automaticall
 __ Usage __
 
 Files may be downloaded from command-line.
-[0;37;100m[0;34m wget --user u298813-sub7 --password wnEtWtT9UDyJiCGw &#39;https://u298813-sub7.your-storagebox.de/file&#39; [0m[0m
-[0;37;100m[0;34m axel -n 12 -H "Authorization: Basic "$(echo -n "u298813-sub7:wnEtWtT9UDyJiCGw" | openssl base64) &#39;https://u298813-sub7.your-storagebox.de/file&#39; [0m[0m
+[0;37;100m[0;34m rm package_image.tar.xz* ; wget --user u298813-sub7 --password wnEtWtT9UDyJiCGw &#39;https://u298813-sub7.your-storagebox.de/ubDistBuild/package_image.tar.xz&#39; [0m[0m
+[0;37;100m[0;34m rm package_image.tar.xz* ; axel -n 12 -H "Authorization: Basic "$(echo -n "u298813-sub7:wnEtWtT9UDyJiCGw" | openssl base64) &#39;https://u298813-sub7.your-storagebox.de/ubDistBuild/package_image.tar.xz&#39; [0m[0m
 
 
 Please use &#39;wget&#39; . Beware &#39;axel&#39; is STRONGLY DISCOURAGED for shell scripts - may not be available, may overwhelm servers with parallel downloads, and may severely degrade network latency backoff algorithms.
+
+___ ubDistBuild ___
+
+May be written to disk. For servers, beware, SSH may not be installed/enabled by default, SSH public keys may not be installed/enabled, and &#39;rootGrab&#39; may be undesired.
+
+[0;37;100m[0;34mapt-get update -y[0m
+[0;37;100mapt-get install -y sudo gparted xinit[0m
+[0;37;100mapt-get install -y x11vnc tigervnc-viewer[0m
+[0;37;100mapt-get install -y tigervnc-*[0m
+[0;37;100mapt-get install -y xz-utils[0m
+[0;37;100mecho &#39;xterm -geometry +1+1 -n login -display :0&#39; > ~/.xinitrc[0m
+
+[0;37;100mwget -qO- --user u298813-sub7 --password wnEtWtT9UDyJiCGw &#39;https://u298813-sub7.your-storagebox.de/ubDistBuild/package_image.tar.xz&#39; | xz -d | tar -xv --occurrence ./vm.img -O | dd of=/dev/sda bs=1M status=progress[0m
+
+
+[0;37;100mstartx[0m
+[0;37;100m# ...[0m
+[0;37;100mvncf <ip.addr>[0m
+[0;37;100msudo gparted [0m[0m
+
+ '_page'PageBreak -H-H-H-H- PageBreak -H-H-H-H- PageBreak -H-H-H-H- PageBreak -H-H-H-H- PageBreak
+
+
+__ Instructions (Similar Near Equivalent), Ingredients __
+
+Soaring Distributions LLC products may include other products of Soaring Distributions LLC, or other information from others (eg. &#39;ubiquitous_bash&#39; by manager mirage335. Mostly, but not necessarily entirely, as briefly described here.
+
+___ ubDistBuild ___
+
+____ Instructions ____
+
+Similar near equivalent usually installable within a dist/OS . Beware swap may be enabled by default (especially if <3GB RAM detected), and reboot may be necessary to enable all features as expected. Virtual Terminal (ie. &#39;chvt 2&#39; or &#39;Ctrl+Alt+F2&#39; if usable) or SSH session may be required, as the display manager (eg. sddm) may be stopped as necessary.
+[0;37;100m[0;34mapt-get install -y sudo[0m
+[0;37;100mapt-get install -y build-essential[0m
+[0;37;100mapt-get install -y linux-headers-$(uname -r)[0m
+
+[0;37;100mwget https://bit.ly/getNvSh[0m
+[0;37;100mchmod u+x getNvSh[0m
+[0;37;100m./getNvSh _install[0m
+
+[0;37;100mwget https://bit.ly/rotInsSh[0m
+[0;37;100mchmod u+x rotInsSh[0m
+[0;37;100m./rotInsSh _custom_kernel[0m
+[0;37;100m./rotInsSh _install_and_run[0m
+
+[0;37;100m# optional[0m
+[0;37;100m./rotInsSh _custom_core_drop[0m
+
+
+
+[0;37;100m#_mustBeRoot[0m
+[0;37;100m#cd /root[0m
+
+[0;37;100mwget https://bit.ly/rootGrabSh[0m
+[0;37;100mmv rootGrabSh _rootGrab.sh[0m
+[0;37;100mchmod u+x _rootGrab.sh[0m
+[0;37;100m./_rootGrab.sh _hook[0m
+[0;37;100mecho > /regenerate_rootGrab[0m
+[0;37;100m./_rootGrab.sh __grab_hook[0m
+
+
+
+[0;37;100mecho > /regenerate[0m
+[0;37;100mreboot [0m[0m
+
+
+
+Cloud-Init scripts may exist to automatically effect similar near equivalent results on top of cloud providers (eg. Hetzner, Vultr, DigitalOcean, etc) dist/OS, custom, etc. Some may be specialized (eg. to quickly create a &#39;croc&#39; relay). Beware some cloud providers (eg. Azure) may significantly price bandwidth/usage.
+ 
+_r '
+<a href="https://github.com/mirage335/ubiquitous_bash/tree/master/_lib/kit/install/cloud/cloud-init/zRotten">https://github.com/mirage335/ubiquitous_bash/tree/master/_lib/kit/install/cloud/cloud-init/zRotten</a>
+'
+
+____ Ingredients ____
+
+Image created with dd, parted, chroot, debootstrap, qemu, etc .
+ 
+_r '
+<a href="https://github.com/soaringDistributions/ubDistBuild/blob/main/_prog/core.sh#L119">https://github.com/soaringDistributions/ubDistBuild/blob/main/_prog/core.sh#L119</a>
+'
+ 
+_r '
+<a href="https://github.com/mirage335/ubiquitous_bash/blob/master/virtualization/bios/createvm.sh">https://github.com/mirage335/ubiquitous_bash/blob/master/virtualization/bios/createvm.sh</a>
+'
+ 
+_r '
+<a href="https://github.com/mirage335/ubiquitous_bash/blob/master/virtualization/bios/live.sh">https://github.com/mirage335/ubiquitous_bash/blob/master/virtualization/bios/live.sh</a>
+'
+
+
+
+Software installed by scripts.
+ 
+_r '
+<a href="https://github.com/mirage335/ubiquitous_bash/blob/master/_lib/kit/install/cloud/cloud-init/zRotten/zMinimal/rotten_install.sh#L872">https://github.com/mirage335/ubiquitous_bash/blob/master/_lib/kit/install/cloud/cloud-init/zRotten/zMinimal/rotten_install.sh#L872</a>
+'
+ 
+_r '
+<a href="https://github.com/soaringDistributions/ubDistBuild/tree/main/_lib/setup/nvidia">https://github.com/soaringDistributions/ubDistBuild/tree/main/_lib/setup/nvidia</a>
+'
+ 
+_r '
+<a href="https://github.com/soaringDistributions/ubDistBuild/tree/main/_lib/setup/rootGrab">https://github.com/soaringDistributions/ubDistBuild/tree/main/_lib/setup/rootGrab</a>
+'
+
+ '_page'PageBreak -H-H-H-H- PageBreak -H-H-H-H- PageBreak -H-H-H-H- PageBreak -H-H-H-H- PageBreak
+
 
 __ Plain Text __
 An essentially plain text copy of this document is normally available as &#39;README.sh.out.txt&#39; , generated by &#39;scriptedIllustrator&#39;.
@@ -248,6 +357,11 @@ https://www.nvidia.com/en-us/drivers/geforce-license/
 
 https://packages.debian.org/es/bullseye/firmware-ipw2x00
 https://packages.debian.org/es/bullseye/arm/firmware-ivtv
+
+
+
+https://unix.stackexchange.com/questions/61461/how-to-extract-specific-files-from-tar-gz
+https://superuser.com/questions/655739/extract-single-file-from-huge-tgz-file
 
 __ Copyright __
 
