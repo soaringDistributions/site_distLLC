@@ -125,7 +125,7 @@ Please use &#39;wget&#39; . Beware &#39;axel&#39; is STRONGLY DISCOURAGED for sh
 
 ___ ubDistBuild ___
 
-May be written to disk. For servers, beware, cloud-init data source may not be configured, SSH may not be installed/enabled by default, SSH password login may be disabled, SSH public keys may not be installed/enabled, and &#39;rootGrab&#39; may be an undesired default.
+May be written to disk. For servers, beware, cloud-init data source may not be configured, SSH may not be installed/enabled by default, SSH password login may be disabled, SSH public keys may not be installed/enabled, cloud utils (ie. hc-utils) may not be installed, and &#39;rootGrab&#39; may be an undesired default. Usually, some effort nevertheless has been made to prevent cloud integration issues with &#39;ubDistBuild&39; pre-built images.
 
 [0;37;100m[0;34mapt-get update -y[0m
 [0;37;100mapt-get install -y sudo gparted xinit[0m

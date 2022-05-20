@@ -374,8 +374,10 @@ _t '
 scriptedIllustrator_markup_uk4uPhB663kVcygT0q --><!-- # --><pre style="margin-top: 0px;margin-bottom: 0px;white-space: pre-wrap;">
 May be written to disk. For servers, beware, cloud-init data source may not 
 be configured, SSH may not be installed/enabled by default, SSH password 
-login may be disabled, SSH public keys may not be installed/enabled, and 
-&#39;rootGrab&#39; may be an undesired default.
+login may be disabled, SSH public keys may not be installed/enabled, cloud 
+utils (ie. hc-utils) may not be installed, and &#39;rootGrab&#39; may be an 
+undesired default. Usually, some effort nevertheless has been made to 
+prevent cloud integration issues with &#39;ubDistBuild&39; pre-built images.
 
 <!-- # --></pre><!-- scriptedIllustrator_markup_uk4uPhB663kVcygT0q
 '
