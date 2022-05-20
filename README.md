@@ -342,10 +342,10 @@ scriptedIllustrator_markup_uk4uPhB663kVcygT0q --><!-- # --><pre style="margin-to
 Files may be downloaded from command-line.
 <!-- # --></pre><!-- scriptedIllustrator_markup_uk4uPhB663kVcygT0q
 '
- '_o' '_messagePlain_probe' 'rm package_image.tar.xz* ; wget --user u298813-sub7 --password wnEtWtT9UDyJiCGw &#39;https://u298813-sub7.your-storagebox.de/ubDistBuild/package_image.tar.xz&#39;'
+ '_o' '_messagePlain_probe' 'rm package_image.tar.xz* ; wget --user u298813-sub7 --password wnEtWtT9UDyJiCGw &#39;https://bit.ly/ubDistBuildImg&#39;'
 if false; then true; # -->
 <!-- # --><pre style="-webkit-print-color-adjust: exact;background-color:#848484;margin-top: 0px;margin-bottom: 0px;white-space: pre-wrap;">
-<!-- # --><span style="color:#1818b2;background-color:#848484;"> rm package_image.tar.xz* ; wget --user u298813-sub7 --password wnEtWtT9UDyJiCGw &#39;https://u298813-sub7.your-storagebox.de/ubDistBuild/package_image.tar.xz&#39;</span>
+<!-- # --><span style="color:#1818b2;background-color:#848484;"> rm package_image.tar.xz* ; wget --user u298813-sub7 --password wnEtWtT9UDyJiCGw &#39;https://bit.ly/ubDistBuildImg&#39;</span>
 <!-- # --></pre>
 <!--
 fi
@@ -372,10 +372,10 @@ if false; then true; # -->
 fi
 _t '
 scriptedIllustrator_markup_uk4uPhB663kVcygT0q --><!-- # --><pre style="margin-top: 0px;margin-bottom: 0px;white-space: pre-wrap;">
-May be written to disk. For servers, beware, SSH may not be 
-installed/enabled by default, SSH password login may be disabled, SSH 
-public keys may not be installed/enabled, and &#39;rootGrab&#39; may be an 
-undesired default.
+May be written to disk. For servers, beware, cloud-init data source may not 
+be configured, SSH may not be installed/enabled by default, SSH password 
+login may be disabled, SSH public keys may not be installed/enabled, and 
+&#39;rootGrab&#39; may be an undesired default.
 
 <!-- # --></pre><!-- scriptedIllustrator_markup_uk4uPhB663kVcygT0q
 '
@@ -386,13 +386,34 @@ apt-get install -y tigervnc-*
 apt-get install -y xz-utils
 echo &#39;xterm -geometry +1+1 -n login -display :0&#39; > ~/.xinitrc
 
-wget -qO- --user u298813-sub7 --password wnEtWtT9UDyJiCGw &#39;https://u298813-sub7.your-storagebox.de/ubDistBuild/package_image.tar.xz&#39; | xz -d | tar -xv --occurrence ./vm.img -O | dd of=/dev/sda bs=1M status=progress
+mkdir -p /mnt/temp
+mount /dev/sda1 /mnt/temp
+
+mkdir ./cloud.cfg.d
+cp /mnt/temp/etc/cloud/cloud.cfg.d/*hetzner* ./cloud.cfg.d/
+cp /mnt/temp/root/.ssh/authorized_keys ./
+
+
+umount /mnt/temp
+
+wget -qO- --user u298813-sub7 --password wnEtWtT9UDyJiCGw &#39;https://bit.ly/ubDistBuildImg&#39; | xz -d | tar -xv --occurrence ./vm.img -O | dd of=/dev/sda bs=1M status=progress
+
+
+parted -s -a opt /dev/sda "print free" "resizepart 5 100%" "print free"
+mount /dev/sda5 /mnt/temp
+btrfs filesystem resize max /mnt/temp
+
+mkdir -p /mnt/temp/etc/cloud/cloud.cfg.d
+cp ./cloud.cfg.d/* /mnt/temp/etc/cloud/cloud.cfg.d/
+cp ./authorized_keys  /mnt/temp/root/.ssh/authorized_keys
+chmod ugoa-x /mnt/temp/root/_rootGrab.sh
 
 
 startx
 # ...
 vncf &lt;ip.addr&gt;
-sudo gparted'
+# ...
+sudo -n gparted'
 if false; then true; # -->
 <!-- # --><pre style="-webkit-print-color-adjust: exact;background-color:#848484;margin-top: 0px;margin-bottom: 0px;white-space: pre-wrap;">
 <!-- # --><span style="color:#1818b2;background-color:#848484;">apt-get update -y
@@ -402,13 +423,34 @@ if false; then true; # -->
 <!-- # -->apt-get install -y xz-utils
 <!-- # -->echo &#39;xterm -geometry +1+1 -n login -display :0&#39; > ~/.xinitrc
 <!-- # -->
-<!-- # -->wget -qO- --user u298813-sub7 --password wnEtWtT9UDyJiCGw &#39;https://u298813-sub7.your-storagebox.de/ubDistBuild/package_image.tar.xz&#39; | xz -d | tar -xv --occurrence ./vm.img -O | dd of=/dev/sda bs=1M status=progress
+<!-- # -->mkdir -p /mnt/temp
+<!-- # -->mount /dev/sda1 /mnt/temp
+<!-- # -->
+<!-- # -->mkdir ./cloud.cfg.d
+<!-- # -->cp /mnt/temp/etc/cloud/cloud.cfg.d/*hetzner* ./cloud.cfg.d/
+<!-- # -->cp /mnt/temp/root/.ssh/authorized_keys ./
+<!-- # -->
+<!-- # -->
+<!-- # -->umount /mnt/temp
+<!-- # -->
+<!-- # -->wget -qO- --user u298813-sub7 --password wnEtWtT9UDyJiCGw &#39;https://bit.ly/ubDistBuildImg&#39; | xz -d | tar -xv --occurrence ./vm.img -O | dd of=/dev/sda bs=1M status=progress
+<!-- # -->
+<!-- # -->
+<!-- # -->parted -s -a opt /dev/sda "print free" "resizepart 5 100%" "print free"
+<!-- # -->mount /dev/sda5 /mnt/temp
+<!-- # -->btrfs filesystem resize max /mnt/temp
+<!-- # -->
+<!-- # -->mkdir -p /mnt/temp/etc/cloud/cloud.cfg.d
+<!-- # -->cp ./cloud.cfg.d/* /mnt/temp/etc/cloud/cloud.cfg.d/
+<!-- # -->cp ./authorized_keys  /mnt/temp/root/.ssh/authorized_keys
+<!-- # -->chmod ugoa-x /mnt/temp/root/_rootGrab.sh
 <!-- # -->
 <!-- # -->
 <!-- # -->startx
 <!-- # --># ...
 <!-- # -->vncf &lt;ip.addr&gt;
-<!-- # -->sudo gparted</span>
+<!-- # --># ...
+<!-- # -->sudo -n gparted</span>
 <!-- # --></pre>
 <!--
 fi
@@ -916,6 +958,9 @@ https://unix.stackexchange.com/questions/61461/how-to-extract-specific-files
 -from-tar-gz
 https://superuser.com/questions/655739/extract-single-file-from-huge-tgz-fil
 e
+https://serverfault.com/questions/870594/resize-partition-to-maximum-using-p
+arted-in-non-interactive-mode
+https://www.thegeekdiary.com/how-to-resize-expand-a-btrfs-volume-filesystem/
 <!-- # --></pre><!-- scriptedIllustrator_markup_uk4uPhB663kVcygT0q
 '
  '_' '_page'
