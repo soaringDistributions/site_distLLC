@@ -147,15 +147,20 @@ May be written to disk. For servers, beware, cloud-init data source may not be c
 [0;37;100mwget -qO- --user u298813-sub7 --password wnEtWtT9UDyJiCGw &#39;https://bit.ly/ubDistBuildImg&#39; | xz -d | tar -xv --occurrence ./vm.img -O | dd of=/dev/sda bs=1M status=progress[0m
 
 
+[0;37;100mprintf "fix
+" | parted ---pretend-input-tty /dev/sda print[0m
 [0;37;100mparted -s -a opt /dev/sda "print free" "resizepart 5 100%" "print free"[0m
 [0;37;100mmount /dev/sda5 /mnt/temp[0m
+[0;37;100mdf -h /mnt/temp[0m
 [0;37;100mbtrfs filesystem resize max /mnt/temp[0m
+[0;37;100mdf -h /mnt/temp[0m
 
 [0;37;100mmkdir -p /mnt/temp/etc/cloud/cloud.cfg.d[0m
 [0;37;100mcp ./cloud.cfg.d/* /mnt/temp/etc/cloud/cloud.cfg.d/[0m
 [0;37;100mcp ./authorized_keys  /mnt/temp/root/.ssh/authorized_keys[0m
 [0;37;100mchmod ugoa-x /mnt/temp/root/_rootGrab.sh[0m
 
+[0;37;100mumount /mnt/temp[0m
 
 [0;37;100mstartx[0m
 [0;37;100m# ...[0m
@@ -385,6 +390,8 @@ https://unix.stackexchange.com/questions/61461/how-to-extract-specific-files-fro
 https://superuser.com/questions/655739/extract-single-file-from-huge-tgz-file
 https://serverfault.com/questions/870594/resize-partition-to-maximum-using-parted-in-non-interactive-mode
 https://www.thegeekdiary.com/how-to-resize-expand-a-btrfs-volume-filesystem/
+
+https://stackoverflow.com/questions/57496500/how-to-script-automatic-task-with-parted-update-gpt-table
 
 __ Copyright __
 

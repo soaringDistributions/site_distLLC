@@ -399,15 +399,19 @@ umount /mnt/temp
 wget -qO- --user u298813-sub7 --password wnEtWtT9UDyJiCGw &#39;https://bit.ly/ubDistBuildImg&#39; | xz -d | tar -xv --occurrence ./vm.img -O | dd of=/dev/sda bs=1M status=progress
 
 
+printf "fix\n" | parted ---pretend-input-tty /dev/sda print
 parted -s -a opt /dev/sda "print free" "resizepart 5 100%" "print free"
 mount /dev/sda5 /mnt/temp
+df -h /mnt/temp
 btrfs filesystem resize max /mnt/temp
+df -h /mnt/temp
 
 mkdir -p /mnt/temp/etc/cloud/cloud.cfg.d
 cp ./cloud.cfg.d/* /mnt/temp/etc/cloud/cloud.cfg.d/
 cp ./authorized_keys  /mnt/temp/root/.ssh/authorized_keys
 chmod ugoa-x /mnt/temp/root/_rootGrab.sh
 
+umount /mnt/temp
 
 startx
 # ...
@@ -436,15 +440,19 @@ if false; then true; # -->
 <!-- # -->wget -qO- --user u298813-sub7 --password wnEtWtT9UDyJiCGw &#39;https://bit.ly/ubDistBuildImg&#39; | xz -d | tar -xv --occurrence ./vm.img -O | dd of=/dev/sda bs=1M status=progress
 <!-- # -->
 <!-- # -->
+<!-- # -->printf "fix\n" | parted ---pretend-input-tty /dev/sda print
 <!-- # -->parted -s -a opt /dev/sda "print free" "resizepart 5 100%" "print free"
 <!-- # -->mount /dev/sda5 /mnt/temp
+<!-- # -->df -h /mnt/temp
 <!-- # -->btrfs filesystem resize max /mnt/temp
+<!-- # -->df -h /mnt/temp
 <!-- # -->
 <!-- # -->mkdir -p /mnt/temp/etc/cloud/cloud.cfg.d
 <!-- # -->cp ./cloud.cfg.d/* /mnt/temp/etc/cloud/cloud.cfg.d/
 <!-- # -->cp ./authorized_keys  /mnt/temp/root/.ssh/authorized_keys
 <!-- # -->chmod ugoa-x /mnt/temp/root/_rootGrab.sh
 <!-- # -->
+<!-- # -->umount /mnt/temp
 <!-- # -->
 <!-- # -->startx
 <!-- # --># ...
@@ -961,6 +969,9 @@ e
 https://serverfault.com/questions/870594/resize-partition-to-maximum-using-p
 arted-in-non-interactive-mode
 https://www.thegeekdiary.com/how-to-resize-expand-a-btrfs-volume-filesystem/
+
+https://stackoverflow.com/questions/57496500/how-to-script-automatic-task-wi
+th-parted-update-gpt-table
 <!-- # --></pre><!-- scriptedIllustrator_markup_uk4uPhB663kVcygT0q
 '
  '_' '_page'
