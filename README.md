@@ -342,10 +342,10 @@ scriptedIllustrator_markup_uk4uPhB663kVcygT0q --><!-- # --><pre style="margin-to
 Files may be downloaded from command-line.
 <!-- # --></pre><!-- scriptedIllustrator_markup_uk4uPhB663kVcygT0q
 '
- '_o' '_messagePlain_probe' 'rm package_image.tar.xz* ; wget --user u298813-sub7 --password wnEtWtT9UDyJiCGw &#39;https://bit.ly/ubDistBuildImg&#39;'
+ '_o' '_messagePlain_probe' 'rm package_image.tar.xz* ; wget --user u298813-sub7 --password wnEtWtT9UDyJiCGw &#39;https://u298813-sub7.your-storagebox.de/ubDistBuild/package_image.tar.xz&#39;'
 if false; then true; # -->
 <!-- # --><pre style="-webkit-print-color-adjust: exact;background-color:#848484;margin-top: 0px;margin-bottom: 0px;white-space: pre-wrap;">
-<!-- # --><span style="color:#1818b2;background-color:#848484;"> rm package_image.tar.xz* ; wget --user u298813-sub7 --password wnEtWtT9UDyJiCGw &#39;https://bit.ly/ubDistBuildImg&#39;</span>
+<!-- # --><span style="color:#1818b2;background-color:#848484;"> rm package_image.tar.xz* ; wget --user u298813-sub7 --password wnEtWtT9UDyJiCGw &#39;https://u298813-sub7.your-storagebox.de/ubDistBuild/package_image.tar.xz&#39;</span>
 <!-- # --></pre>
 <!--
 fi
@@ -462,6 +462,43 @@ if false; then true; # -->
 <!-- # -->vncf &lt;ip.addr&gt;
 <!-- # --># ...
 <!-- # -->sudo -n gparted</span>
+<!-- # --></pre>
+<!--
+fi
+_t '
+scriptedIllustrator_markup_uk4uPhB663kVcygT0q --><!-- # --><pre style="margin-top: 0px;margin-bottom: 0px;white-space: pre-wrap;">
+
+Scripts from ubDistBuild repository are able to customize and convert such 
+images.
+
+<!-- # --></pre><!-- scriptedIllustrator_markup_uk4uPhB663kVcygT0q
+'
+ '_o' '_messagePlain_probe_noindent' '_gitBest clone --recursive --depth 1 git@github.com:soaringDistributions/ubDistBuild.git
+cd _local
+wget --user u298813-sub7 --password wnEtWtT9UDyJiCGw &#39;https://u298813-sub7.your-storagebox.de/ubDistBuild/package_image.tar.xz&#39;
+tar xf package_image.tar.xz
+cd ..
+
+# Edit &#39;ops.sh&#39; from &#39;ops.example.sh&#39;.
+./ubiquitous_bash.sh _create
+
+./_nouveau_enable
+./_convert
+'
+if false; then true; # -->
+<!-- # --><pre style="-webkit-print-color-adjust: exact;background-color:#848484;margin-top: 0px;margin-bottom: 0px;white-space: pre-wrap;">
+<!-- # --><span style="color:#1818b2;background-color:#848484;">_gitBest clone --recursive --depth 1 git@github.com:soaringDistributions/ubDistBuild.git
+<!-- # -->cd _local
+<!-- # -->wget --user u298813-sub7 --password wnEtWtT9UDyJiCGw &#39;https://u298813-sub7.your-storagebox.de/ubDistBuild/package_image.tar.xz&#39;
+<!-- # -->tar xf package_image.tar.xz
+<!-- # -->cd ..
+<!-- # -->
+<!-- # --># Edit &#39;ops.sh&#39; from &#39;ops.example.sh&#39;.
+<!-- # -->./ubiquitous_bash.sh _create
+<!-- # -->
+<!-- # -->./_nouveau_enable
+<!-- # -->./_convert
+<!-- # --></span>
 <!-- # --></pre>
 <!--
 fi

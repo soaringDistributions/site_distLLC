@@ -166,7 +166,7 @@ Public files not officially at a &#39;release&#39; directory may be automaticall
 _ _page
 _heading2 'Usage'
 _t 'Files may be downloaded from command-line.'
-_o _messagePlain_probe 'rm package_image.tar.xz* ; wget --user u298813-sub7 --password wnEtWtT9UDyJiCGw &#39;https://bit.ly/ubDistBuildImg&#39;'
+_o _messagePlain_probe 'rm package_image.tar.xz* ; wget --user u298813-sub7 --password wnEtWtT9UDyJiCGw &#39;https://u298813-sub7.your-storagebox.de/ubDistBuild/package_image.tar.xz&#39;'
 _o _messagePlain_probe 'rm package_image.tar.xz* ; axel -n 12 -H "Authorization: Basic "$(echo -n "u298813-sub7:wnEtWtT9UDyJiCGw" | openssl base64) &#39;https://u298813-sub7.your-storagebox.de/ubDistBuild/package_image.tar.xz&#39;'
 
 _t '
@@ -219,8 +219,23 @@ startx
 vncf &lt;ip.addr&gt;
 # ...
 sudo -n gparted'
+_t '
 
+Scripts from ubDistBuild repository are able to customize and convert such images.
 
+'
+_o _messagePlain_probe_noindent '_gitBest clone --recursive --depth 1 git@github.com:soaringDistributions/ubDistBuild.git
+cd _local
+wget --user u298813-sub7 --password wnEtWtT9UDyJiCGw &#39;https://u298813-sub7.your-storagebox.de/ubDistBuild/package_image.tar.xz&#39;
+tar xf package_image.tar.xz
+cd ..
+
+# Edit &#39;ops.sh&#39; from &#39;ops.example.sh&#39;.
+./ubiquitous_bash.sh _create
+
+./_nouveau_enable
+./_convert
+'
 
 
 

@@ -117,7 +117,7 @@ Public files not officially at a &#39;release&#39; directory may be automaticall
 __ Usage __
 
 Files may be downloaded from command-line.
-[0;37;100m[0;34m rm package_image.tar.xz* ; wget --user u298813-sub7 --password wnEtWtT9UDyJiCGw &#39;https://bit.ly/ubDistBuildImg&#39; [0m[0m
+[0;37;100m[0;34m rm package_image.tar.xz* ; wget --user u298813-sub7 --password wnEtWtT9UDyJiCGw &#39;https://u298813-sub7.your-storagebox.de/ubDistBuild/package_image.tar.xz&#39; [0m[0m
 [0;37;100m[0;34m rm package_image.tar.xz* ; axel -n 12 -H "Authorization: Basic "$(echo -n "u298813-sub7:wnEtWtT9UDyJiCGw" | openssl base64) &#39;https://u298813-sub7.your-storagebox.de/ubDistBuild/package_image.tar.xz&#39; [0m[0m
 
 
@@ -167,6 +167,22 @@ May be written to disk. For servers, beware, cloud-init data source may not be c
 [0;37;100mvncf &lt;ip.addr&gt;[0m
 [0;37;100m# ...[0m
 [0;37;100msudo -n gparted [0m[0m
+
+
+Scripts from ubDistBuild repository are able to customize and convert such images.
+
+[0;37;100m[0;34m_gitBest clone --recursive --depth 1 git@github.com:soaringDistributions/ubDistBuild.git[0m
+[0;37;100mcd _local[0m
+[0;37;100mwget --user u298813-sub7 --password wnEtWtT9UDyJiCGw &#39;https://u298813-sub7.your-storagebox.de/ubDistBuild/package_image.tar.xz&#39;[0m
+[0;37;100mtar xf package_image.tar.xz[0m
+[0;37;100mcd ..[0m
+
+[0;37;100m# Edit &#39;ops.sh&#39; from &#39;ops.example.sh&#39;.[0m
+[0;37;100m./ubiquitous_bash.sh _create[0m
+
+[0;37;100m./_nouveau_enable[0m
+[0;37;100m./_convert[0m
+[0;37;100m[0m[0m
 
  '_page'PageBreak -H-H-H-H- PageBreak -H-H-H-H- PageBreak -H-H-H-H- PageBreak -H-H-H-H- PageBreak
 
