@@ -483,8 +483,7 @@ cd ..
 ./ubiquitous_bash.sh _create
 
 ./_nouveau_enable
-./_convert
-'
+./_convert'
 if false; then true; # -->
 <!-- # --><pre style="-webkit-print-color-adjust: exact;background-color:#848484;margin-top: 0px;margin-bottom: 0px;white-space: pre-wrap;">
 <!-- # --><span style="color:#1818b2;background-color:#848484;">_gitBest clone --recursive --depth 1 git@github.com:soaringDistributions/ubDistBuild.git
@@ -497,8 +496,7 @@ if false; then true; # -->
 <!-- # -->./ubiquitous_bash.sh _create
 <!-- # -->
 <!-- # -->./_nouveau_enable
-<!-- # -->./_convert
-<!-- # --></span>
+<!-- # -->./_convert</span>
 <!-- # --></pre>
 <!--
 fi

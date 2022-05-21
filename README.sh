@@ -234,8 +234,7 @@ cd ..
 ./ubiquitous_bash.sh _create
 
 ./_nouveau_enable
-./_convert
-'
+./_convert'
 
 
 

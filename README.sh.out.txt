@@ -181,8 +181,7 @@ Scripts from ubDistBuild repository are able to customize and convert such image
 [0;37;100m./ubiquitous_bash.sh _create[0m
 
 [0;37;100m./_nouveau_enable[0m
-[0;37;100m./_convert[0m
-[0;37;100m[0m[0m
+[0;37;100m./_convert [0m[0m
 
  '_page'PageBreak -H-H-H-H- PageBreak -H-H-H-H- PageBreak -H-H-H-H- PageBreak -H-H-H-H- PageBreak
 
