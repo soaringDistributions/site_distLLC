@@ -177,7 +177,7 @@ Please use &#39;wget&#39; . Beware &#39;axel&#39; is STRONGLY DISCOURAGED for sh
 
 
 _heading3 'ubDistBuild'
-_t 'May be written to disk. For servers, beware, cloud-init data source may not be configured, SSH may not be installed/enabled by default, SSH password login may be disabled, SSH public keys may not be installed/enabled, cloud utils (ie. hc-utils) may not be installed, qemu agent may not be installed, and &#39;rootGrab&#39; may be an undesired default. Usually, some effort nevertheless has been made to prevent cloud integration issues with &#39;ubDistBuild&39; pre-built images.
+_t 'May be written to disk. For servers, beware, cloud-init data source may not be configured, SSH may not be installed/enabled by default, SSH password login may be disabled, SSH public keys may not be installed/enabled, cloud utils (ie. hc-utils) may not be installed, qemu agent may not be installed, and &#39;rootGrab&#39; may be an undesired default. Usually, some effort nevertheless has been made to prevent cloud integration issues with &#39;ubDistBuild&#39; pre-built images.
 
 '
 _o _messagePlain_probe_noindent 'apt-get update -y

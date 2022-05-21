@@ -378,7 +378,7 @@ login may be disabled, SSH public keys may not be installed/enabled, cloud
 utils (ie. hc-utils) may not be installed, qemu agent may not be installed, 
 and &#39;rootGrab&#39; may be an undesired default. Usually, some effort 
 nevertheless has been made to prevent cloud integration issues with 
-&#39;ubDistBuild&39; pre-built images.
+&#39;ubDistBuild&#39; pre-built images.
 
 <!-- # --></pre><!-- scriptedIllustrator_markup_uk4uPhB663kVcygT0q
 '
