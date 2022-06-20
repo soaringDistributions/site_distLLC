@@ -168,10 +168,11 @@ _heading2 'Usage'
 _t 'Files may be downloaded from command-line.'
 _o _messagePlain_probe 'rm package_image.tar.xz* ; wget --user u298813-sub7 --password wnEtWtT9UDyJiCGw &#39;https://u298813-sub7.your-storagebox.de/ubDistBuild/package_image.tar.xz&#39;'
 _o _messagePlain_probe 'rm package_image.tar.xz* ; axel -n 12 -H "Authorization: Basic "$(echo -n "u298813-sub7:wnEtWtT9UDyJiCGw" | openssl base64) &#39;https://u298813-sub7.your-storagebox.de/ubDistBuild/package_image.tar.xz&#39;'
+_o _messagePlain_probe 'export http_proxy=&#39;http://IP.ADDR:PORT&#39; ; export all_proxy=$http_proxy ; export https_proxy=$http_proxy ; export ftp_proxy=$http_proxy ; export HTTP_PROXY=$http_proxy ; export HTTPS_PROXY=$http_proxy ; export FTP_PROXY=$http_proxy ; rm package_image.tar.xz* ; rm package_image.tar.xz* ; aria2c -x10 -s10 --http-user="u298813-sub7" --http-passwd="wnEtWtT9UDyJiCGw" &#39;https://u298813-sub7.your-storagebox.de/ubDistBuild/package_image.tar.xz&#39;'
 
 _t '
 
-Please use &#39;wget&#39; . Beware &#39;axel&#39; is STRONGLY DISCOURAGED for shell scripts - may not be available, may overwhelm servers with parallel downloads, and may severely degrade network latency backoff algorithms.'
+Please use &#39;wget&#39; . Beware &#39;axel&#39;, &#39;aria2c&#39;, etc, are STRONGLY DISCOURAGED for shell scripts - may not be available, may overwhelm servers with parallel downloads, and may severely degrade network latency backoff algorithms.'
 
 
 
